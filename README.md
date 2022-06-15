@@ -56,9 +56,9 @@ For generating the dataset you should use a Unity version compatible with the or
 To record depth maps, select a Camera and add it to the list in the SimController/CamerasController object, under the Cameras Manager script. Then, pick the correct options within the CamerasController object: Enable Image Save (for screenshots) and Enable Depth Save (for depthmaps). This will redirect the cameras' outputs from the Unity internal display to a filestream saving screenshots and depths. 
 Resolution of saved samples can be set for each item of the Cameras' list; depthmaps will have the same resolution as frames. 
 
-![Screenshot](doc_images/save.png)
-
 The output folder can be specified in the CamerasController object, as field of the CamerasManager script. After each run, it will contain a folder for each camera in the Cameras list containing pairs of numbered frames (image_<timestep>.bmp) and their respective depthmaps (image_<timestep>_depth.png). 
+
+![Screenshot](doc_images/save.png)
 
 To make cameras move along a path, you should first create your path by adding to a general Parent object many invisible GameObjects (such as Cubes) that will be used as nodes for the path; you can also create it by adding only one object and then duplicating and dragging it where you want the next waypoint in the Unity Scene Editor. Then you must add the PathFollower script to your Cameras camera by drag & dropping the script (Assets/DepthEstimationMaterial/PathFollower.cs) as standard Unity component; be sure that Cameras are also added to the list within the CamerasManager script, otherwise no outputs will be saved even though Cameras would move. Red Gizmo lines will show edges between nodes in the Unity Scene Editor, for a clear path visualization. At the beginning of the simulation, Cameras will be automatically translated to the first node of their path and will be rotated to face the next point; then, upon reaching each node they will immediately turn to face the next one. You can set the speed of the camera within a specific field in the PathFollower component in the camera.
 
