@@ -38,7 +38,7 @@ Click [here](https://drive.google.com/drive/folders/1QeC6BGdSkCF9nwqj8naZApgODzF
 - 6
 - 7
 
-! The structure is the same in all the numbered directories (each one contains a set of pair of images taken from the same camera)
+! The structure is the same in all the numbered directories (each one contains a set of pair of images taken from the same camera)\
 !! NUM (NUM1, NUM2, ..., NUMN) is a 4 digit number -- Images from different cameras can have the same NUM in the name
     
 ### Usage:
