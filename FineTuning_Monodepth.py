@@ -28,7 +28,7 @@ import numpy as np
 import PIL.Image as pil
 import matplotlib as mpl
 import matplotlib.cm as cm
-from google.colab.patches import cv2_imshow
+# from google.colab.patches import cv2_imshow
 from tqdm.notebook import tqdm
 import random
 import time
